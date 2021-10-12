@@ -1,4 +1,4 @@
-{% set version = '0.3.0' %}
+{% set version = "0.3.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,10 +11,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spsComps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spsComps/spsComps_{{ version }}.tar.gz
-  sha256: 1d7e359ef62ffb543d0d0221130be1788f9654073599bf526fb52ffd7a348e0b
+  sha256: 5565daa4a667ad8d6bc556c727fa4a29de1f445775a289f1677308b4d5ed6b72
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -59,14 +59,11 @@ test:
 about:
   home: https://github.com/lz100/spsComps
   license: GPL-3.0-or-later
-  summary: The systemPipeShiny (SPS) framework comes with many UI and server components. However,
-    installing the whole framework is heavy and takes some time. If you would like to
-    use UI and server components from SPS in your own Shiny apps, do not hesitate to
-    try this package.
+  summary: The systemPipeShiny (SPS) framework comes with many UI and server components. However, installing the whole framework is heavy and takes some time. If you would like to use UI and server components from SPS in your own Shiny apps, do not hesitate to try this package.
 
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
