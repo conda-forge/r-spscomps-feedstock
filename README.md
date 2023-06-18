@@ -1,11 +1,11 @@
-About r-spscomps
-================
+About r-spscomps-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spscomps-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lz100/spsComps
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spscomps-feedstock/blob/main/LICENSE.txt)
 
 Summary: The systemPipeShiny (SPS) framework comes with many UI and server components. However, installing the whole framework is heavy and takes some time. If you would like to use UI and server components from SPS in your own Shiny apps, do not hesitate to try this package.
 
