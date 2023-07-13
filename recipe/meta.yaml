@@ -1,4 +1,4 @@
-{% set version = "0.3.2.1" %}
+{% set version = "0.3.3.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spsComps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spsComps/spsComps_{{ version }}.tar.gz
-  sha256: 1c4fd2b380778ad68a1b52622c99218e4a244669dd3aa9ad62579be94d548b2c
+  sha256: c84feab61bcc8873b97a5b95da162decba1e4b1f045b2a16ab24989f78140dfa
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
