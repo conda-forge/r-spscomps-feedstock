@@ -1,7 +1,6 @@
 {% set version = "0.3.3.0" %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-spscomps
@@ -14,8 +13,7 @@ source:
   sha256: c84feab61bcc8873b97a5b95da162decba1e4b1f045b2a16ab24989f78140dfa
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
