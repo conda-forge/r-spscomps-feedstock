@@ -1,4 +1,4 @@
-{% set version = "0.3.3.0" %}
+{% set version = "0.3.4.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spsComps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spsComps/spsComps_{{ version }}.tar.gz
-  sha256: c84feab61bcc8873b97a5b95da162decba1e4b1f045b2a16ab24989f78140dfa
+  sha256: a8e3257583507f2a8163e730d94843cc161658dd9298317bd49c2fd55ef4c9d0
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
